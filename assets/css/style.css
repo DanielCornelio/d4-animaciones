@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
 }
 .navbar a{
     text-decoration: none;
@@ -37,12 +38,14 @@
 .navbar__icon{
     color: #f2f2f2;
     font-size: 24px;
-
+    display: none;
+    
 }
 .links{
-    display: none;
     list-style: none;
     gap:10px;
+    display: flex;
+    margin-top: 10px;
 }
 .filtros{
     grid-area: filtros;
@@ -61,7 +64,6 @@
 .contenido{
     grid-area: contenido;
     background-color: #fff;
-    padding: 20px;
  }
  .section-space{
     padding: 30px 0;
@@ -73,6 +75,9 @@
   align-items: center;
   gap: 20px;
   text-align: center;
+  background-color: #272d4d;
+  color: #fff;
+
 }
 .welcome p:first-child{
     text-transform: uppercase;
@@ -86,7 +91,8 @@
 .intro{
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap:20px;
+    padding: 0 20px;
 }
 .intro__img{
     width: 375px;
@@ -96,7 +102,18 @@
     width: 100%;
     height: 100%;
 }
-.champs{
+
+@keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+  }
+
+.champs__title{
+    text-align: center;
+    margin: 0 0 20px;
+    animation: 1.5s ease 0s infinite beat;
+}  
+.cards{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -113,10 +130,16 @@
     gap: 10px;
     font-size: 24px;
     background-color: #000;
+    overflow:hidden;
 }
+
 .card img{
     width: 100%;
     border-radius: 8px 8px 0 0;
+}
+.card:hover img {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
 }
 .card__title{
     text-transform: uppercase;
@@ -174,7 +197,7 @@
     .filtros{
         justify-content: flex-start;
     }
-    .champs{
+    .cards{
         grid-template-columns: repeat(2, 1fr);
     }
     .card{
@@ -210,7 +233,7 @@
         flex-direction: column;
         color: #f2f2f2;
     }
-    .champs{
+    .cards{
         grid-template-columns: repeat(4, 1fr);
     }
     .footer{
