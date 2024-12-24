@@ -254,6 +254,9 @@ html{
         flex-direction: column;
         color: #f2f2f2;
     }
+    .welcome{
+        height: calc(100vh - 100px);
+    }
     .cards{
         grid-template-columns: repeat(4, 1fr);
     }
