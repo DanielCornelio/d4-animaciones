@@ -243,8 +243,8 @@ html{
         gap: 10px;
     }
     .navbar__logo{
-        margin-bottom: 20px;
-        font-size: 28px;
+         
+        font-size: 20px;
     }
     .navbar__icon{
         display: none;
