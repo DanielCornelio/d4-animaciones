@@ -13,12 +13,13 @@
     <div class="container">
         <nav class="navbar">
             <a href="#" class="">
-                <h1 class="navbar__logo"><i class="fa-solid fa-pen-nib"></i>El Tintero</h1>
+                <img src="./assets/img/logo.webp" alt="logo" class="logo">
+                <h1 class="navbar__logo">League of Legends</h1>
             </a>
             <ul class="links">
-                <li>Home</li>
-                <li>Campeones</li>
-                <li>Contact</li>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#campeones">Campeones</a></li>
+  
             </ul>
             <span class="navbar__icon"><i class="fa-solid fa-bars"></i></span>
 
@@ -27,15 +28,15 @@
             <p>Ordenar Por:</p>
             <select name="" id="" class="filtros__select">
                 <option value="">Seleccionar</option>
-                <option value="marca">Marca</option>
-                <option value="precio">Precio</option>
-                <option value="tipo">Tipo</option>
+                <option value="marca">Ascendente</option>
+                <option value="precio">Descendente</option>
+                <option value="tipo">Daño</option>
             </select>
         </menu>
         <main class="contenido">
-            <section class="section-space welcome ">
+            <section class="section-space welcome " id='welcome'>
                 <div class="intro">
-                    <p>Te damos la bienvenida a la grieta</p>
+                    <p class="intro__text">Te damos la bienvenida a la grieta</p>
                     <h2>APRENDE LO BÁSICO</h2>
                     <p>Hay mucho que aprender sobre LoL, así que empezaremos con lo esencial. Explora la siguiente guía
                         en la que se encuentra un resumen del modo de juego más popular</p>
@@ -51,7 +52,7 @@
 
             </section>
 
-            <section class="champs section-space">
+            <section class="champs section-space" id="campeones">
                 <h2 class="champs__title">CAMPEONES</h2>
                 <div class="cards">
                     <div class="card">
@@ -136,14 +137,7 @@
                     </div>
                 </div>
             </section>
-            <ul class="pagination">
-                <li class="pagination__item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="pagination__item">1</li>
-                <li class="pagination__item">2</li>
-                <li class="pagination__item">3</li>
-                <li class="pagination__item">4</li>
-                <li class="pagination__item"><i class="fa-solid fa-chevron-right"></i></li>
-            </ul>
+             
         </main>
         <footer class="footer">
             <div class="redes">
